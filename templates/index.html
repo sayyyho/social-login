@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Demo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <base href="/" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.js"
+      integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>카카오 로그인</h1>
+    <div class="container unauthenticated">
+      kakao 인증:
+      <a
+        href="https://kauth.kakao.com/oauth/authorize?client_id=576378062e928e8231bd946cc7d65013&redirect_uri=http://localhost:5000/oauth2/kakao/callback/&response_type=code"
+      >
+        click here</a
+      >
+    </div>
+    <div class="container authenticated" style="display: none">
+      Logged in as: <span id="user"></span>
+    </div>
+  </body>
+</html>
